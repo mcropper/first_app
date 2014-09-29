@@ -37,6 +37,12 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+# 'pg' for postgreSQL database on heroku. allows rails and heroku to talk
+# 'rails_12factor' used by heroku to servee static assets such as images and stylesheets.
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
